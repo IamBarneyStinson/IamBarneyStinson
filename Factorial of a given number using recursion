@@ -1,0 +1,13 @@
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+# Get user input for the number to calculate the factorial
+num = int(input("Enter a number to calculate its factorial: "))
+
+# Calculate the factorial of the number
+result = factorial(num)
+
+print(f"The factorial of {num} is {result}")
